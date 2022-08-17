@@ -6,6 +6,7 @@ public class BulletScript : MonoBehaviour {
 
 	GunScript gun;
 	public LineRenderer line;
+	public Collider2D[] col;
 
 	// Use this for initialization
 	void Start () 

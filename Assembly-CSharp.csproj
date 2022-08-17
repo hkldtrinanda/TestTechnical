@@ -58,11 +58,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Score.cs" />
+     <Compile Include="Assets\ScoreManager.cs" />
      <Compile Include="Assets\Script\Fishing\BulletScript.cs" />
      <Compile Include="Assets\Script\Fishing\GunScript.cs" />
      <Compile Include="Assets\Script\Spawn\Letter.cs" />
      <Compile Include="Assets\Script\Spawn\LetterDeploy.cs" />
+     <Compile Include="Assets\Script\Spawn\SpawnInCube.cs" />
+     <Compile Include="Assets\Timer.cs" />
  <Reference Include="Unity.Timeline.Editor">
  <HintPath>Z:/GIT New/New folder/TestTechnical/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
  </Reference>

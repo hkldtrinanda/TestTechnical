@@ -6,7 +6,7 @@ using Random = UnityEngine.Random;
 
 public class LetterDeploy : MonoBehaviour
 {
-    public GameObject letterPrefab;
+    public GameObject[] letterPrefab;
     
     
     public float respawnTime = 1.0f;
@@ -23,7 +23,7 @@ public class LetterDeploy : MonoBehaviour
 
     private void spawnEnemy()
     {
-        GameObject a = Instantiate(letterPrefab) as GameObject;
+        GameObject a = Instantiate(letterPrefab[Random.Range(0, letterPrefab.Length)]) as GameObject;
         a.transform.position = new Vector2(screenBounds.x * 2, Random.Range(-screenBounds.y, screenBounds.y));
         
 

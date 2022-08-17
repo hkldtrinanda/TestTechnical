@@ -18,6 +18,8 @@ public class GunScript : MonoBehaviour {
 
 	public SpringJoint2D spring;
 
+	public Rigidbody2D rb;
+
 	
 
 	// Use this for initialization
@@ -25,6 +27,7 @@ public class GunScript : MonoBehaviour {
 	{
 		line.enabled = false;	
 		spring.enabled = false;
+		
 	}
 	
 	// Update is called once per frame
@@ -71,6 +74,8 @@ public class GunScript : MonoBehaviour {
 		line.enabled = true;
 		spring.enabled = true;
 		spring.connectedBody = target.GetComponent<Rigidbody2D>();
+		rb.constraints = RigidbodyConstraints2D.None;
+		
 		
 	}
 
@@ -79,5 +84,7 @@ public class GunScript : MonoBehaviour {
 		line.enabled = false;
 		spring.enabled = false;
 		target = null;
+		rb.constraints = RigidbodyConstraints2D.FreezePositionY;
+		
 	}
 }

@@ -48,6 +48,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   line: {fileID: 8655930945960310461}
+  col:
+  - {fileID: 4144939014740437935, guid: c036f669a6928864b89ccfaf547686c3, type: 3}
 --- !u!212 &7014086627521086390
 SpriteRenderer:
   m_ObjectHideFlags: 0
