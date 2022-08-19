@@ -51,7 +51,7 @@ public class ScoreManager : MonoBehaviour
         
         if (coll.tag == "box")
         {
-            score -= 100;
+            score -= 50;
             Destroy(coll.gameObject);
             MyText.text = "Score" + score;
 
